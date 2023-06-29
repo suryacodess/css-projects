@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #bcd1fe 70%, #90a6ef 30%);
+  @include center();
+  padding: 20px;
+
+  // desktop
+  .desktop {
+    height: 320px;
+    width: 520px;
+    margin: 20px;
+    @include center();
+    flex-direction: column;
+    position: relative;
+    .desktop-screen {
+      height: 220px;
+      max-width: 420px;
+      width: 100%;
+      border: 5px solid #243482;
+      background: #505ab9;
+      @include center();
+      color: #fff;
+      font-weight: 900;
+      position: relative;
+      overflow: hidden;
+
+      .rocket {
+        p {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+      }
+    }
+
+    .desktop-tab {
+      height: 40px;
+      max-width: 420px;
+      width: 100%;
+      background: #f99746;
+      position: relative;
+
+      .clip,
+      .clip-2,
+      .clip-3 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        font-size: 4px;
+        @include center();
+        padding: 5px;
+      }
+      .clip {
+        background: #8c9df5;
+        border-top: 10px solid #6a80e0;
+        top: 10px;
+        left: 20px;
+        transform: rotate(-20deg);
+      }
+
+      .clip-2 {
+        background: #a8d2a0;
+        border-top: 10px solid #83b37a;
+        top: 15px;
+        right: 20px;
+        transform: rotate(10deg);
+      }
+
+      .clip-3 {
+        background: #8c9df5;
+        border-top: 10px solid #6a80e0;
+        top: -15px;
+        right: 0px;
+        transform: rotate(-8deg);
+      }
+    }
+    .desktop-handle {
+      max-width: 80px;
+      width: 100%;
+      height: 30px;
+      border-top: 5px solid #e17523;
+      background: #f99746;
+    }
+
+    .desktop-support-bar {
+      width: 150px;
+      height: 15px;
+      background: #e17523;
+      bottom: 150px;
+      transform: rotateX(20deg);
+    }
+
+    .keyboard {
+      height: 100px;
+      max-width: 320px;
+      width: 100%;
+      background: #5159bb;
+      position: absolute;
+      top: 130%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // desktop cactus pot
+  .desktop-others {
+    height: 320px;
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+
+    .cactus {
+      text-align: center;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      position: absolute;
+      top: 45%;
+
+      p {
+        font-size: 80px;
+      }
+    }
+
+    .desktop-pot {
+      max-width: 120px;
+      width: 100%;
+      height: 80px;
+      background: #2b468b;
+      border-bottom-left-radius: 35px;
+      border-bottom-right-radius: 35px;
+      z-index: 1;
+    }
+
+    .pencil-nip,
+    .pencil-nip-1 {
+      width: 0;
+      height: 0;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+      border-bottom: 6px solid #e6cebb;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .pencil-nip {
+      right: 10px;
+      bottom: 30px;
+    }
+
+    .pencil-nip-1 {
+      right: 20px;
+      bottom: 20px;
+    }
+
+    .pencil,
+    .pencil-1 {
+      height: 40px;
+      width: 5px;
+      background: #a7474b;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .pencil {
+      right: 10px;
+      bottom: -10px;
+    }
+
+    .pencil-1 {
+      right: 20px;
+      bottom: -20px;
+    }
+
+    .cup {
+      width: 50px;
+      height: 45px;
+      background: linear-gradient(to right, #f99746 70%, #ed7d2b 30%);
+      position: absolute;
+      right: 0;
+      bottom: -40px;
+      z-index: 9;
+    }
+  }
+
+  //desktop speakers
+  .desktop-speakers {
+    height: 320px;
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+
+    .music-1 {
+      position: absolute;
+      bottom: 200px;
+      left: 100px;
+    }
+
+    p {
+      color: black;
+      font-weight: bolder;
+      position: absolute;
+
+      &:nth-child(1) {
+        bottom: 100px;
+        left: 35px;
+        color: red;
+      }
+
+      &:nth-child(2) {
+        bottom: 80px;
+        left: 35px;
+        color: blue;
+      }
+
+      &:nth-child(3) {
+        bottom: 0px;
+        left: 35px;
+        color: rebeccapurple;
+      }
+
+      &:nth-child(4) {
+        bottom: 0px;
+        left: 35px;
+        color: black;
+      }
+    }
+
+    .speaker {
+      height: 70px;
+      width: 70px;
+      border-radius: 16px;
+      background: #7a8dea;
+      @include center();
+
+      .speaker-inner {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background: #e1732a;
+
+        .circle {
+          height: 40px;
+          width: 40px;
+          border: 1px solid black;
+          background: transparent;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 768px) {
+//   .main {
+//     height: 100vh;
+//     width: 100%;
+//     background: linear-gradient(to left, #bcd1fe 70%, #90a6ef 30%);
+//     display:flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     flex-direction: column;
+//     padding:0 20px;
+
+//     .desktop,
+//     .desktop-others,
+//     .desktop-speakers {
+//       transform: rotate(90deg);
+//     }
+
+//     .desktop-others{
+//       padding:50px;
+//       align-items: flex-start;
+//     }
+//   }
+// }
