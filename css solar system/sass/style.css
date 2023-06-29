@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.solar-system-template {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.solar-system-template .sun-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.solar-system-template .sun-img img {
+  height: 150px;
+  width: 150px;
+}
+.solar-system-template .star {
+  position: absolute;
+  transform: rotate(230deg);
+  top: -100px;
+  background: linear-gradient(white, black);
+  height: 70px;
+  width: 1px;
+}
+.solar-system-template .star:nth-child(1) {
+  left: 100px;
+}
+.solar-system-template .star:nth-child(2) {
+  left: 200px;
+}
+.solar-system-template .star:nth-child(3) {
+  right: 80px;
+}
+.solar-system-template .star:nth-child(4) {
+  left: 35%;
+}
+.solar-system-template .star:nth-child(5) {
+  top: 450px;
+  right: -50px;
+}
+.solar-system-template .solar-system {
+  min-height: 100vh;
+  min-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://media.istockphoto.com/id/1295851454/photo/earth-and-solar-system-planets.webp?b=1&s=170667a&w=0&k=20&c=MvTxuhzjrk39h_-KH_Zj6xwRGRS1oBmMp9TB79cgP4o=);
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center;
+  background-size: cover;
+}
+@keyframes sun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.solar-system-template .solar-system .sun {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: relative;
+  background-image: url(/planets/sun.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  animation: sun 25s linear infinite;
+}
+.solar-system-template .solar-system .sun .mecury {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-150%, -50%);
+  background-image: url(/planets/mercury.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: contain;
+}
+.solar-system-template .solar-system .sun .venus {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-200%, -320%);
+  background-image: url(/planets/venus.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: contain;
+}
+.solar-system-template .solar-system .sun .earth {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(305%, 150%);
+  background-image: url(/planets/earth.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: contain;
+}
+.solar-system-template .solar-system .sun .mars {
+  height: 39px;
+  width: 39px;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-480%, -150%);
+  background-image: url(/planets/mars.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: contain;
+}
+.solar-system-template .solar-system .sun .jupiter {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-430%, 240%);
+  background-image: url(/planets/jupiter.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: contain;
+}
+.solar-system-template .solar-system .sun .saturn {
+  height: 53px;
+  width: 53px;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(610%, 350%);
+  background-image: url(/planets/saturn.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.solar-system-template .solar-system .sun .uranus {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(845%, -100%);
+  background-image: url(/planets/uranus.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: contain;
+}
+.solar-system-template .solar-system .sun .neptune {
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-1010%, -50%);
+  background-image: url(/planets/neptune.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: contain;
+}/*# sourceMappingURL=style.css.map */
