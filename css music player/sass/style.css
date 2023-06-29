@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+.d-none {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main-inner {
+  height: 500px;
+  width: 290px;
+  border: 1px solid black;
+}
+.main .main-inner header {
+  text-align: center;
+  padding: 10px;
+}
+.main .main-inner header h6 {
+  font-weight: lighter;
+}
+.main .main-inner header h6:last-child {
+  font-weight: bold;
+}
+.main .main-inner .album-img {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.main .main-inner .album-img img {
+  width: 250px;
+  height: 250px;
+}
+.main .main-inner .album-text {
+  padding: 20px 20px;
+}
+.main .main-inner .album-text h6 {
+  font-weight: lighter;
+  font-size: 10px;
+}
+.main .main-inner .album-controllers {
+  padding: 10px 20px;
+}
+.main .main-inner .album-controllers .indicator {
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+.main .main-inner .album-controllers .btns {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .main-inner .album-controllers .btns .shuffle button,
+.main .main-inner .album-controllers .btns .next button,
+.main .main-inner .album-controllers .btns .previous button,
+.main .main-inner .album-controllers .btns .play button,
+.main .main-inner .album-controllers .btns .repeat button {
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 20px;
+}
+.main .main-inner .album-controllers .btns .shuffle button i,
+.main .main-inner .album-controllers .btns .next button i,
+.main .main-inner .album-controllers .btns .previous button i,
+.main .main-inner .album-controllers .btns .play button i,
+.main .main-inner .album-controllers .btns .repeat button i {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */

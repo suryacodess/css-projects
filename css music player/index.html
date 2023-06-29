@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7fd578f29d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>css music player</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="main-inner">
+            <header>
+                <div class="title">
+                    <h6>PLAYLIST FROM YOUR LIBRARY</h6>
+                    <h6>Mine</h6>
+                </div>
+            </header>
+
+            <section class="album-img">
+                <img src="" alt="image">
+            </section>
+
+            <section class="album-text">
+                <h5 id="song"></h5>
+                <h6 id="singer"></h6>
+            </section>
+
+
+            <section class="album-controllers">
+                <div class="indicator"></div>
+                <div class="btns">
+                    <div class="shuffle">
+                        <button value="shuffle">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </button>
+                    </div>
+                    <div class="previous">
+                        <button value="previous" onclick="previous()">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </button>
+                    </div>
+                    <div class="play">
+                        <button>
+                            <i id="play" class="fa-sharp fa-solid fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="next">
+                        <button value="next" onclick="next()">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </button>
+                    </div>
+                    <div class="repeat">
+                        <button value="repeat">
+                            <i class="fa-solid fa-repeat"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="d-none">
+                <audio controls>
+                    <source id="songSource" type="audio/mpeg">
+                </audio>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
