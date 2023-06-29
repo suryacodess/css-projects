@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.insta-story-template {
+  min-height: 100vh;
+  width: 100%;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .insta-story-screen {
+    min-height: 548px;
+    min-width: 320px;
+    background-image: url(../imgs/story1.jpg);
+    object-fit: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: 0.4);
+    position: relative;
+    .top {
+      height: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+      // background: #000;
+      color: #fff;
+      .icon-sec {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        width: 90%;
+
+        .icon {
+          padding: 0px 6px 0px 0;
+          img {
+            width: 31px;
+            height: 31px;
+            object-fit: cover;
+            border-radius: 50%;
+            background-size: 100% 100%;
+            background-position: center;
+          }
+        }
+
+        .icon-text {
+          font-weight: 400;
+          color: #fff;
+          width: 100%;
+          p {
+            font-size: 12px;
+
+            span {
+              margin-left: 4px;
+            }
+          }
+
+          .bar-sec {
+            display: flex;
+            align-items: center;
+            margin: 4px;
+            width: 100%;
+            margin-left: 2px;
+            .bar {
+              margin: 0 0.9px;
+              height: 6px;
+              width: 2.1px;
+              border-top-left-radius: 1px;
+              border-top-right-radius: 1px;
+              border-bottom-left-radius: 1px;
+              border-bottom-right-radius: 1px;
+              background: #fff;
+              // transform: scaleY(1.5);
+            }
+
+            .bar:nth-child(1) {
+              animation: bar1 0.8s linear infinite;
+              animation-direction: alternate;
+            }
+            @keyframes bar1 {
+              from {
+                transform: scaleY(0.6);
+              }
+              to {
+                transform: scaleY(1.8);
+              }
+            }
+            .bar:nth-child(2) {
+              animation: bar2 0.8s linear infinite;
+              animation-direction: alternate;
+              // animation-delay: .8;
+              animation-delay: 0.8s;
+            }
+            @keyframes bar2 {
+              from {
+                transform: scaleY(0.6);
+              }
+              to {
+                transform: scaleY(1.8);
+              }
+            }
+            .bar:nth-child(3) {
+              animation: bar3 0.8s linear infinite;
+              animation-direction: alternate;
+            }
+            @keyframes bar3 {
+              from {
+                transform: scaleY(0.6);
+              }
+              to {
+                transform: scaleY(1.8);
+              }
+            }
+
+            .bar-text {
+              margin-left: 2px;
+              p {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+      }
+
+      .close-btn-sec {
+        button {
+          background: none;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          i {
+            font-size: 27px;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .bottom {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      height: 50px;
+      width: 100%;
+      padding: 0 10px;
+      .seen-sec {
+        width: 30%;
+        height: 100%;
+        color: #fff;
+
+        .seen-imgs {
+          img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: -9px;
+            border: 1px solid #fff;
+          }
+        }
+
+        .seen-text {
+          p {
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            margin-top: 4px;
+          }
+        }
+      }
+
+      .more-sec {
+        width: 70%;
+        height: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: end;
+
+        .more {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          margin: 0 0 0 15px;
+          p {
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  audio{
+    position: absolute;
+    top:20px;
+    right:20px;
+
+  }
+}
+
+@media (max-width: 380px) {
+  .insta-story-template {
+    .insta-story-screen {
+      height: 100vh;
+      width: 100%;
+    }
+
+    audio{
+      z-index: -1;
+    }
+  }
+}

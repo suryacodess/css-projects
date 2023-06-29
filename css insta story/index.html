@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style.css">
+    <script src="https://kit.fontawesome.com/7fd578f29d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500&family=Roboto+Mono:wght@300;400&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <title>insta-story-animation</title>
+</head>
+
+<body>
+
+
+    <main class="insta-story-template">
+        <div class="insta-story-screen">
+            <div class="top">
+                <div class="icon-sec">
+                    <div class="icon">
+                        <img src="./imgs/icon.jpg" alt="">
+                    </div>
+                    <div class="icon-text">
+                        <p>Your Story <span>3h</span></p>
+                        <div class="bar-sec">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar-text">
+                                <p>Santhosh Narayanan . Mahaan Trailer Tra...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-btn-sec">
+                    <button id="close-btn">
+                        <i class="fas fa-close"></i>
+                    </button>
+                </div>
+            </div>
+            <footer class="bottom">
+                <div class="seen-sec">
+                    <div class="seen-imgs">
+                        <img src="./imgs/mikasa.jpg" alt="">
+                        <img src="./imgs/armin.jpeg" alt="">
+                        <img src="./imgs/levi.jpg" alt="">
+                    </div>
+                    <div class="seen-text">
+                        <p>Seen by 45</p>
+                    </div>
+                </div>
+                <div class="more-sec">
+                    <div class="more">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="more">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Highlights</p>
+                    </div>
+                    <div class="more">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <p>More</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <audio autoplay>
+            <source src="./Mahaan bgm.mp3" type="audio/ogg">
+        </audio>
+    </main>
+
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+
+    <!-- //Script  -->
+    <script src="./script.js"></script>
+
+    <!-- //bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- //jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+        $(document).ready(() => {
+            console.log("heyconsole")
+        })
+
+    </script>
+
+
+
+</body>
+
+</html>
