@@ -1,0 +1,798 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main .tab {
+  height: 200px;
+  width: 300px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  border-radius: 20px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40px;
+  background: #7f00ff; /* fallback for old browsers */
+  border-radius: 20px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  z-index: -1;
+}
+.main .tab a:hover {
+  color: #fff;
+}
+.main .tab a:hover::before {
+  width: 100%;
+}
+.main .tab a:last-child {
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+.main .tab a:last-child::before {
+  width: 100%;
+  left: -100%;
+}
+.main .tab a:last-child::before:hover {
+  color: #fff;
+}
+.main .tab a:last-child::before:hover::before {
+  left: 0;
+}
+.main .tab .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  border-radius: 20px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab .two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 40px;
+  background: #7f00ff; /* fallback for old browsers */
+  border-radius: 20px;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  z-index: -1;
+}
+.main .tab .two:hover {
+  color: #fff;
+}
+.main .tab .two:hover::before {
+  left: 0;
+  width: 100%;
+}
+.main .tab-2 {
+  height: 200px;
+  width: 300px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-2 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-2 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 40px;
+  background: #7f00ff; /* fallback for old browsers */
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  z-index: -1;
+}
+.main .tab-2 a:hover {
+  color: #fff;
+}
+.main .tab-2 a:hover::before {
+  width: 100%;
+}
+.main .tab-2 a:last-child {
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+.main .tab-2 a:last-child::before {
+  width: 100%;
+  left: -100%;
+}
+.main .tab-2 a:last-child::before:hover {
+  color: #fff;
+}
+.main .tab-2 a:last-child::before:hover::before {
+  left: 0;
+}
+.main .tab-2 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-2 .two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 40px;
+  background: #7f00ff; /* fallback for old browsers */
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  z-index: -1;
+}
+.main .tab-2 .two:hover {
+  color: #fff;
+}
+.main .tab-2 .two:hover::before {
+  left: 0;
+  width: 100%;
+}
+.main .tab-3 {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-3 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-3 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff; /* fallback for old browsers */
+  transform: rotate(50deg);
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  z-index: -1;
+}
+.main .tab-3 a:hover {
+  color: #fff;
+}
+.main .tab-3 a:hover::before {
+  transform: rotate(0);
+}
+.main .tab-3 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-3 .two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff; /* fallback for old browsers */
+  transform: rotate(-50deg);
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  z-index: -1;
+}
+.main .tab-3 .two:hover {
+  color: #fff;
+}
+.main .tab-3 .two:hover::before {
+  left: 0;
+  width: 100%;
+}
+.main .tab-4 {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-4 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-4 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -60%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff; /* fallback for old browsers */
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  z-index: -1;
+}
+.main .tab-4 a:hover {
+  color: #fff;
+}
+.main .tab-4 a:hover::before {
+  right: 0;
+}
+.main .tab-4 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+  border: 1px solid #fff;
+}
+.main .tab-4 .two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff; /* fallback for old browsers */
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  z-index: -1;
+}
+.main .tab-4 .two:hover {
+  color: #fff;
+}
+.main .tab-4 .two:hover::before {
+  right: 0;
+}
+.main .tab-5 {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-5 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.main .tab-5 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 60%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff; /* fallback for old browsers */
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  z-index: -1;
+}
+.main .tab-5 a:hover {
+  color: #fff;
+}
+.main .tab-5 a:hover::before {
+  right: 0;
+}
+.main .tab-5 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+  border: 1px solid #fff;
+}
+.main .tab-5 .two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff; /* fallback for old browsers */
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  z-index: -1;
+}
+.main .tab-5 .two:hover {
+  color: #fff;
+}
+.main .tab-5 .two:hover::before {
+  left: 0;
+}
+.main .tab-6 {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-6 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+  border-radius: 20px;
+}
+.main .tab-6 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 40%;
+  border-radius: 50%;
+  background: #7f00ff; /* fallback for old browsers */
+  transition: all ease 0.5s;
+  z-index: -1;
+}
+.main .tab-6 a:hover {
+  color: #fff;
+}
+.main .tab-6 a:hover::before {
+  left: 100%;
+}
+.main .tab-6 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+  border: 1px solid #fff;
+}
+.main .tab-6 .two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 40%;
+  background: #7f00ff; /* fallback for old browsers */
+  transition: all ease 1ss;
+  z-index: -1;
+}
+.main .tab-6 .two:hover {
+  color: #fff;
+}
+.main .tab-6 .two:hover::before {
+  left: 100%;
+}
+.main .tab-7 {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-7 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-7 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  transition: all ease 0.5s;
+  z-index: -1;
+}
+.main .tab-7 a:hover {
+  color: #fff;
+}
+.main .tab-7 a:hover::before {
+  transform: rotate(0);
+}
+.main .tab-7 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+  border: 1px solid #fff;
+}
+.main .tab-7 .two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  transition: all ease 1ss;
+  z-index: -1;
+}
+.main .tab-7 .two:hover {
+  color: #fff;
+}
+.main .tab-7 .two:hover::before {
+  transform: rotate(0);
+}
+.main .tab-8 {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-8 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-8 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transform: rotate(-90deg);
+  transform-origin: top right;
+  transition: all ease 0.5s;
+  z-index: -1;
+}
+.main .tab-8 a:hover {
+  color: #fff;
+}
+.main .tab-8 a:hover::before {
+  transform: rotate(0);
+}
+.main .tab-8 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+  border: 1px solid #fff;
+}
+.main .tab-8 .two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transform: rotate(-90deg);
+  transform-origin: top right;
+  transition: all ease 1ss;
+  z-index: -1;
+}
+.main .tab-8 .two:hover {
+  color: #fff;
+}
+.main .tab-8 .two:hover::before {
+  transform: rotate(0);
+}
+.main .tab-9 {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-9 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-9 a::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transition: all ease 0.5s;
+  z-index: -1;
+}
+.main .tab-9 a:hover {
+  color: #fff;
+}
+.main .tab-9 a:hover::before {
+  top: 0;
+}
+.main .tab-9 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+  border: 1px solid #fff;
+}
+.main .tab-9 .two::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transition: all ease 1ss;
+  z-index: -1;
+}
+.main .tab-9 .two:hover {
+  color: #fff;
+}
+.main .tab-9 .two:hover::before {
+  top: 0;
+}
+.main .tab-10 {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-10 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-10 a::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transition: all ease 0.5s;
+  z-index: -1;
+}
+.main .tab-10 a:hover {
+  color: #fff;
+}
+.main .tab-10 a:hover::before {
+  bottom: 0;
+}
+.main .tab-10 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+  border: 1px solid #fff;
+}
+.main .tab-10 .two::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transition: all ease 1ss;
+  z-index: -1;
+}
+.main .tab-10 .two:hover {
+  color: #fff;
+}
+.main .tab-10 .two:hover::before {
+  bottom: 0;
+}
+.main .tab-11 {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-11 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-11 a::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transition: all ease 0.5s;
+  z-index: -1;
+}
+.main .tab-11 a:hover {
+  color: #fff;
+}
+.main .tab-11 a:hover::before {
+  left: 0;
+}
+.main .tab-11 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+  border: 1px solid #fff;
+}
+.main .tab-11 .two::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transition: all ease 1ss;
+  z-index: -1;
+}
+.main .tab-11 .two:hover {
+  color: #fff;
+}
+.main .tab-11 .two:hover::before {
+  left: 0;
+}
+.main .tab-12 {
+  width: 300px;
+  height: 200px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .tab-12 a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 9999;
+}
+.main .tab-12 a::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transition: all ease 0.5s;
+  z-index: -1;
+}
+.main .tab-12 a:hover {
+  color: #fff;
+}
+.main .tab-12 a:hover::before {
+  right: 0;
+}
+.main .tab-12 .two {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 9999;
+  border: 1px solid #fff;
+}
+.main .tab-12 .two::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  background: #7f00ff;
+  transition: all ease 1ss;
+  z-index: -1;
+}
+.main .tab-12 .two:hover {
+  color: #fff;
+}
+.main .tab-12 .two:hover::before {
+  right: 0;
+}/*# sourceMappingURL=style.css.map */
