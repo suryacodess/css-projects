@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.animation {
+  transform: translateY(-100%);
+}
+
+.preloader {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 1.1s ease;
+}
+.preloader h1 {
+  font-size: 4vw;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main h1 {
+  font-size: 6vw;
+  line-height: 120%;
+}
+.main p {
+  font-size: 1.5vw;
+}/*# sourceMappingURL=style.css.map */
