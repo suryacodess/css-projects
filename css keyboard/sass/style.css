@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.black {
+  background: black;
+  color: #fff;
+}
+.black:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .main-inner {
+  max-width: 1200px;
+  width: 100%;
+  height: 350px;
+  width: 100%;
+}
+.main .main-inner .two {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.main .main-inner .two .two-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.main .main-inner .two .two-inner .two-one {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main .main-inner .two .two-inner .two-two {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.main .main-inner .two .two-inner .two-one,
+.main .main-inner .two .two-inner .two-two {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.main .main-inner .two .two-inner .two-one .key:hover,
+.main .main-inner .two .two-inner .two-two .key:hover {
+  background: #000;
+  color: #fff;
+}
+.main .main-inner .two .two-inner .two-one .two-inner-div,
+.main .main-inner .two .two-inner .two-one .three-inner-div,
+.main .main-inner .two .two-inner .two-two .two-inner-div,
+.main .main-inner .two .two-inner .two-two .three-inner-div {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: default;
+  line-height: 100%;
+  transition: all 0.4s ease;
+}
+.main .main-inner .two .key:hover {
+  background: #000;
+  color: #fff;
+}
+.main .main-inner .two .two-three {
+  width: 100px;
+  height: 90%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: default;
+  line-height: 100%;
+}
+.main .main-inner .one,
+.main .main-inner .three,
+.main .main-inner .four {
+  max-width: 100%;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main .main-inner .one .two-inner,
+.main .main-inner .three .two-inner,
+.main .main-inner .four .two-inner {
+  display: flex;
+  flex-direction: column;
+}
+.main .main-inner .one .two-inner .two-one,
+.main .main-inner .one .two-inner .two-two,
+.main .main-inner .three .two-inner .two-one,
+.main .main-inner .three .two-inner .two-two,
+.main .main-inner .four .two-inner .two-one,
+.main .main-inner .four .two-inner .two-two {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main-inner .one .key:hover,
+.main .main-inner .three .key:hover,
+.main .main-inner .four .key:hover {
+  background: #000;
+  color: #fff;
+}
+.main .main-inner .one .one-inner-div,
+.main .main-inner .one .two-inner-div,
+.main .main-inner .one .three-inner-div,
+.main .main-inner .one .four-inner-div,
+.main .main-inner .three .one-inner-div,
+.main .main-inner .three .two-inner-div,
+.main .main-inner .three .three-inner-div,
+.main .main-inner .three .four-inner-div,
+.main .main-inner .four .one-inner-div,
+.main .main-inner .four .two-inner-div,
+.main .main-inner .four .three-inner-div,
+.main .main-inner .four .four-inner-div {
+  max-width: 100%;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: default;
+  line-height: 100%;
+}
+.main .main-inner .one .five-inner-div,
+.main .main-inner .three .five-inner-div,
+.main .main-inner .four .five-inner-div {
+  max-width: 60px;
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0px;
+  cursor: default;
+  line-height: 100%;
+}
+.main .main-inner .one .space,
+.main .main-inner .three .space,
+.main .main-inner .four .space {
+  max-width: 60%;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

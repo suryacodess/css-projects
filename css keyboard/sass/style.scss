@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.black {
+  background: black;
+  color: #fff;
+
+  &:hover {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .main-inner {
+    max-width: 1200px;
+    width: 100%;
+    height: 350px;
+    width: 100%;
+
+    .two {
+      width: 100%;
+      height: 150px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 10px;
+      .two-inner {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        .two-one {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        .two-two {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+
+        .two-one,
+        .two-two {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          gap: 10px;
+
+          .key {
+            &:hover {
+              background: #000;
+              color: #fff;
+            }
+          }
+
+          .two-inner-div,
+          .three-inner-div {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #000;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: default;
+            line-height: 100%;
+            transition: all 0.4s ease;
+          }
+        }
+      }
+      .key {
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
+      .two-three {
+        width: 100px;
+        height: 90%;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #000;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: default;
+        line-height: 100%;
+      }
+    }
+
+    .one,
+    .three,
+    .four {
+      max-width: 100%;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .two-inner {
+        display: flex;
+        flex-direction: column;
+        .two-one,
+        .two-two {
+          gap: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .key {
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
+
+      .one-inner-div,
+      .two-inner-div,
+      .three-inner-div,
+      .four-inner-div {
+        max-width: 100%;
+        width: 100%;
+        height: 80%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #000;
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 20px;
+        cursor: default;
+        line-height: 100%;
+      }
+      .five-inner-div {
+        max-width: 60px;
+        width: 100%;
+        height: 80%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #000;
+        font-weight: bold;
+        border-radius: 20px;
+        padding: 0px;
+        cursor: default;
+        line-height: 100%;
+      }
+
+      .space {
+        max-width: 60%;
+        width: 100%;
+      }
+    }
+  }
+}
