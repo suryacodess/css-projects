@@ -1,0 +1,43 @@
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.main .img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+  animation-name: loader;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes loader {
+  0% {
+    box-shadow: #333 0 0 0 0;
+  }
+  50% {
+    box-shadow: rgba(255, 105, 180, 0) 0 0 0 20px;
+  }
+  100% {
+    box-shadow: #333 0 0 0 0;
+  }
+}/*# sourceMappingURL=style.css.map */
