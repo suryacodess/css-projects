@@ -14,13 +14,12 @@
   background: #eee;
 }
 .main .title {
-  max-width: 70%;
+  max-width: 80%;
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 150px;
 }
 .main .title .text {
   width: 100%;
@@ -28,4 +27,5 @@
 }
 .main .title .text h1 {
   font-weight: 900;
+  font-size: 6vw;
 }/*# sourceMappingURL=style.css.map */

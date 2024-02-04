@@ -158,10 +158,90 @@
                 if (alpha[six] == "P") {
                     h6.innerText = alpha[six];
                     clearInterval(timer6)
-                    // timer()
+                    timer7()
                 }
             }, 70)
         }
+
+        function timer7() {
+            let timer7 = setInterval(() => {
+                h7.innerText = alpha[seven];
+                seven++;
+                if (seven === alpha.length) {
+                    seven = 0;
+                    h7.innerText = "R";
+                    clearInterval(timer7);
+                    timer8();
+                }
+            }, 70);
+        }
+
+        function timer8() {
+            let timer8 = setInterval(() => {
+                h8.innerText = alpha[eight];
+                eight++;
+                if (eight === alpha.length) {
+                    eight = 0;
+                    h8.innerText = "A";
+                    clearInterval(timer8);
+                    timer9();
+                }
+            }, 70);
+        }
+
+        function timer9() {
+            let nine = 0;
+            let timer9 = setInterval(() => {
+                h9.innerText = alpha[nine];
+                nine++;
+
+                if (nine === 26) {
+                    nine = 0;
+                    h9.innerText = "K";
+                    clearInterval(timer9);
+                    timer10();
+                }
+            }, 70);
+        }
+
+        function timer10() {
+            let timer10 = setInterval(() => {
+                h10.innerText = alpha[ten];
+                ten++;
+                if (ten === 26) {
+                    ten = 0;
+                    h10.innerText = "A";
+                    clearInterval(timer10);
+                    timer11();
+                }
+            }, 70);
+        }
+
+        function timer11() {
+            let timer11 = setInterval(() => {
+                h11.innerText = alpha[eleven];
+                eleven++;
+                if (eleven === 26) {
+                    eleven = 0;
+                    h11.innerText = "S";
+                    clearInterval(timer11);
+                    timer12();
+                }
+            }, 70);
+        }
+
+        function timer12() {
+            let timer12 = setInterval(() => {
+                h12.innerText = alpha[tweleve];
+                tweleve++;
+                if (tweleve === 26) {
+                    tweleve = 0;
+                    h12.innerText = "H";
+                    clearInterval(timer12);
+                }
+            }, 70);
+        }
+
 
 
         let s = "suryaprakash"

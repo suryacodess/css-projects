@@ -13,18 +13,18 @@
   align-items: center;
   background: #eee;
   .title {
-    max-width: 70%;
+    max-width: 80%;
     width: 100%;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 150px;
     .text {
       width: 100%;
       transition: all 0.4s ease;
       h1 {
         font-weight: 900;
+        font-size: 6vw;
       }
     }
   }
